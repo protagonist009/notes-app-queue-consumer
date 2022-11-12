@@ -1,4 +1,4 @@
-require('dotenv').config();
+/* eslint-disable no-underscore-dangle */
 const { Pool } = require('pg');
 
 class NotesService {
@@ -15,6 +15,7 @@ class NotesService {
       values: [userId],
     };
     const result = await this._pool.query(query);
+    console.log(userId);
     return result.rows;
   }
 }

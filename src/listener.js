@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 class Listener {
   constructor(notesService, mailSender) {
     this._notesService = notesService;
